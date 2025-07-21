@@ -26,4 +26,7 @@ public interface ProductoService {
 
     //Lista de productos utilizando consultas con SQL Nativo
     public List<Producto> metodoNativo(double precioInf, double precioSup);
+
+    //Lista de productos por descripción sin importar mayúsculas o minúsculas
+    public List<Producto> findByDescripcionContainingIgnoreCase(String descripcion);
 }
